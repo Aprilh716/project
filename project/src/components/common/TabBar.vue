@@ -8,7 +8,9 @@
 	 :key='index'
 	 active-class='sel'
      >
- 	{{item.title}}</router-link>
+ 	{{item.title}}
+ 	   <a class='iconfont icon' :class="item.icon"></a>
+     </router-link>
 
    </ul>
 </template>
@@ -24,10 +26,10 @@ export default {
   data(){
   	return {
   		navlist:[
-  		{path:'/home',title:'Home',icon:''},
-  		{path:'/category',title:'category',icon:''},
-  		{path:'/shopcar',title:'shopcar',icon:''},
-  		{path:'/my',title:'my',icon:''}]
+  		{path:'/home',title:'首页',icon:'icon-shouye'},
+  		{path:'/category',title:'分类',icon:'icon-fenlei'},
+  		{path:'/shopcar',title:'购物车',icon:'icon-gouwuche'},
+  		{path:'/my',title:'我的',icon:'icon-wode'}]
   	}
   }
 }
@@ -35,7 +37,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-/*@import url("../../style/main.less");
+@import url("../../style/main.less");
 #tabbar{
 	position: fixed;
 	left: 0;
@@ -48,13 +50,23 @@ export default {
 		width: 25%;
 		.fs(16);
 		text-align:center;
-		.lh(60);
+		.lh(35);
+		.p_t(30);
+		position: relative;
 		
 		color:@tabColor;	
+		.icon{
+			position: absolute;
+			left: 40%;
+			top: 0px;
+			.fs(18);
+			color:@icon1;
+		
+		}
   }
 	.sel{
 		color: @tabSelColor;
 	}
 }
-*/
+
 </style>

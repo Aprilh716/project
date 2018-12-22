@@ -1,6 +1,7 @@
 <template>
 	<div id="home">
 	<Header  title='零食客'></Header>
+	<TabBar></TabBar>
 	
 	</div>
 </template>

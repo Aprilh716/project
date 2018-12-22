@@ -1,15 +1,17 @@
 <template>
 	<div id="shopcar">
-	这里是购物车页面
+	<Header title='购物车'></Header>
+	<TabBar></TabBar>
 	
 	</div>
 </template>
 
 <script>
+	import Header from 'common/Header'
 	import TabBar from 'common/TabBar'
 	export default{
 		name:'ShopCar',
-		components:{TabBar} ,
+		components:{Header,TabBar} ,
 		data(){
 			return{
 				 msg: 'Welcome to Your Vue.js App'

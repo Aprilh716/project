@@ -1,15 +1,15 @@
 <template>
 	<div id="reg">
-	这里是注册页面
-	
+	<Header title='注册' btnshow='true'></Header>
 	</div>
 </template>
 
 <script>
-	import TabBar from 'common/TabBar'
+	import Header from 'common/Header'
+	
 	export default{
 		name:'Reg',
-		components:{TabBar} ,
+		components:{Header} ,
 		data(){
 			return{
 				 msg: 'Welcome to Your Vue.js App'
